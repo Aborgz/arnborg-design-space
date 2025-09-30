@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import profilePhoto from "@/assets/samuel-profile.jpg";
 
 const Index = () => {
   const projects = [
@@ -51,23 +52,35 @@ const Index = () => {
       </header>
 
       {/* About Section */}
-      <section id="about" className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-4xl font-bold text-primary mb-6 code-text">About Me</h2>
-        <div className="space-y-4 text-lg text-foreground">
-          <p>
-            I am a passionate <strong>UX Designer and Graphic Artist</strong> focused on creating intuitive, 
-            human-centered digital experiences and impactful visual branding. My process blends rigorous 
-            user research with a minimalist, dark aesthetic, drawing inspiration from retro web design 
-            and brutalist architecture.
-          </p>
-          <p>
-            My work spans the entire product lifecycle, from initial concept sketches and wireframing to 
-            high-fidelity prototyping and visual design systems. I thrive on solving complex problems with 
-            simple, elegant solutions that prioritize clarity and accessibility.
-          </p>
-          <p className="code-text italic text-muted-foreground">
-            Currently based in [Your City Here], available for freelance projects and collaborations.
-          </p>
+      <section id="about" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 className="text-4xl font-bold text-primary mb-8 code-text">About Me</h2>
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+          {/* Profile Photo */}
+          <div className="flex-shrink-0">
+            <img 
+              src={profilePhoto} 
+              alt="Samuel Arnborg - UX Designer and Graphic Artist"
+              className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-border shadow-lg"
+            />
+          </div>
+          
+          {/* About Text */}
+          <div className="space-y-4 text-lg text-foreground flex-1">
+            <p>
+              I am a passionate <strong>UX Designer and Graphic Artist</strong> focused on creating intuitive, 
+              human-centered digital experiences and impactful visual branding. My process blends rigorous 
+              user research with a minimalist, dark aesthetic, drawing inspiration from retro web design 
+              and brutalist architecture.
+            </p>
+            <p>
+              My work spans the entire product lifecycle, from initial concept sketches and wireframing to 
+              high-fidelity prototyping and visual design systems. I thrive on solving complex problems with 
+              simple, elegant solutions that prioritize clarity and accessibility.
+            </p>
+            <p className="code-text italic text-muted-foreground">
+              Currently based in [Your City Here], available for freelance projects and collaborations.
+            </p>
+          </div>
         </div>
       </section>
 
