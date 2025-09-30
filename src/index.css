@@ -258,11 +258,11 @@
   }
 
   .glitch-entrance {
-    animation: glitch-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: glitch-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     position: relative;
   }
 
-  /* Intense scan lines */
+  /* Intense scan lines - fades out completely */
   .glitch-entrance::before {
     content: '';
     position: absolute;
@@ -275,12 +275,13 @@
       rgba(255, 0, 200, 0.15) 3px
     );
     pointer-events: none;
-    animation: glitch-scanlines 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: glitch-scanlines 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     z-index: 10;
     mix-blend-mode: screen;
+    opacity: 0;
   }
 
-  /* Digital noise overlay */
+  /* Digital noise overlay - fades out completely */
   .glitch-entrance::after {
     content: '';
     position: absolute;
@@ -289,19 +290,20 @@
       repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.03) 3px, rgba(255, 255, 255, 0.03) 4px),
       repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 255, 255, 0.03) 3px, rgba(0, 255, 255, 0.03) 4px);
     pointer-events: none;
-    animation: glitch-noise 4s steps(10);
+    animation: glitch-noise 4s steps(10) forwards;
     z-index: 10;
     mix-blend-mode: overlay;
+    opacity: 0;
   }
 
   .glitch-entrance h1 {
-    animation: glitch-rgb-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: glitch-rgb-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
     position: relative;
   }
 
   /* Holographic glow effect */
   .glitch-entrance .relative {
-    animation: glitch-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: glitch-intense 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   }
 
   /* 2025 Modern project card with enhanced glassmorphism */
