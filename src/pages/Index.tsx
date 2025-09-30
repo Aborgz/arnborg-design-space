@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import profilePhoto from "@/assets/samuel-profile.jpg";
 import lifeplannerImage from "@/assets/lifeplanner-preview.png";
+import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 
 const Index = () => {
   const projects = [
@@ -33,76 +34,141 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
       {/* Skip to main content link for keyboard users */}
       <a href="#main-content" className="skip-link">
         Skip to main content
       </a>
 
-      {/* Header / Navigation */}
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-border/50 sticky top-0 glass-card z-10" role="banner">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <h1 className="text-3xl font-bold tracking-tight">
-            <span className="gradient-text">Samuel Arnborg</span>
-          </h1>
-          <nav className="mt-4 md:mt-0 space-x-8" role="navigation" aria-label="Main navigation">
-            <a href="#projects" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View projects section">
-              Projects
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View about section">
-              About
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View contact section">
-              Contact
-            </a>
-          </nav>
+      {/* Modern Header */}
+      <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/30" role="banner">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div className="flex justify-between items-center">
+            {/* Social Icons - Left Side */}
+            <div className="flex items-center gap-4">
+              <a 
+                href="https://www.linkedin.com/in/samuel-arnborg-5a0145337/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+                aria-label="LinkedIn profile"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="https://github.com/Aborgz" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
+                aria-label="GitHub profile"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+            </div>
+
+            {/* Navigation - Right Side */}
+            <nav className="flex items-center gap-8" role="navigation" aria-label="Main navigation">
+              <a href="#projects" className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+                Works
+              </a>
+              <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+                About
+              </a>
+              <a 
+                href="mailto:arnborg.samuel@gmail.com" 
+                className="px-6 py-2.5 bg-primary/10 text-primary border border-primary/20 rounded-full font-medium text-sm hover:bg-primary/20 transition-all duration-300 hover:scale-105"
+                aria-label="Contact via email"
+              >
+                contact@samuel.com
+              </a>
+            </nav>
+          </div>
         </div>
       </header>
 
-      {/* About Section */}
-      <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24" aria-labelledby="about-heading">
-        <h2 id="about-heading" className="text-5xl font-bold gradient-text mb-12">About Me</h2>
-        <div className="glass-card rounded-3xl p-8 md:p-12">
-          <div className="flex flex-col md:flex-row gap-10 items-start">
-            {/* Profile Photo */}
-            <div className="flex-shrink-0 relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700 animate-pulse" />
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
-              <img 
-                src={profilePhoto} 
-                alt="Samuel Arnborg - UX Designer and Graphic Artist"
-                className="relative w-56 h-56 md:w-64 md:h-64 rounded-3xl object-cover border-2 border-primary/30 shadow-2xl transition-all duration-700 group-hover:scale-105 group-hover:border-primary/60"
-                style={{ objectPosition: 'center 20%', boxShadow: '0 20px 60px hsl(265 85% 65% / 0.3)' }}
-              />
+      {/* Hero Section - KC Studio Inspired */}
+      <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+        <div className="text-center max-w-5xl mx-auto space-y-12 animate-fade-in">
+          {/* Profile Photo with Status Badge */}
+          <div className="relative inline-block">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-full blur-3xl animate-pulse" />
+            <img 
+              src={profilePhoto} 
+              alt="Samuel Arnborg - UX Designer"
+              className="relative w-40 h-40 rounded-full object-cover border-2 border-primary/30 shadow-2xl mx-auto"
+              style={{ objectPosition: 'center 20%' }}
+            />
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary/20 border border-primary/30 rounded-full backdrop-blur-xl">
+              <span className="text-xs font-medium text-primary">✦ Available for work</span>
             </div>
-            
-            {/* About Text */}
-            <div className="space-y-5 text-lg text-foreground/90 flex-1">
-              <p className="leading-relaxed">
+          </div>
+
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight">
+            <span className="block text-foreground/40 text-3xl md:text-4xl mb-4 font-normal">I'm Samuel</span>
+            <span className="gradient-text block">UX DESIGNER</span>
+            <span className="gradient-text block">&</span>
+            <span className="gradient-text block">GRAPHIC ARTIST</span>
+          </h1>
+
+          <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+            Over the years, I've created <strong className="text-primary">intuitive digital experiences</strong><br />
+            that blend rigorous research with minimalist aesthetics
+          </p>
+
+          {/* Scroll Indicator */}
+          <div className="pt-12 animate-bounce">
+            <div className="w-6 h-10 border-2 border-primary/30 rounded-full mx-auto flex items-start justify-center p-2">
+              <div className="w-1 h-3 bg-primary rounded-full" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section - Redesigned */}
+      <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="about-heading">
+        <div className="glass-card rounded-3xl p-12 md:p-16">
+          <h2 id="about-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-12 text-center">About Me</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
+              <p>
                 I am a passionate <strong className="text-primary">UX Designer and Graphic Artist</strong> focused on creating intuitive, 
-                human-centered digital experiences and impactful visual branding. My process blends rigorous 
-                user research with a minimalist, dark aesthetic, drawing inspiration from retro web design 
+                human-centered digital experiences and impactful visual branding.
+              </p>
+              <p>
+                My process blends rigorous user research with a minimalist aesthetic, drawing inspiration from retro web design 
                 and brutalist architecture.
               </p>
-              <p className="leading-relaxed">
+              <p>
                 My work spans the entire product lifecycle, from initial concept sketches and wireframing to 
-                high-fidelity prototyping and visual design systems. I thrive on solving complex problems with 
-                simple, elegant solutions that prioritize clarity and accessibility.
+                high-fidelity prototyping and visual design systems.
               </p>
-              <p className="text-base text-muted-foreground pt-2 border-t border-border/30">
-                📍 Currently based in Karlstad, available for freelance projects and collaborations.
-              </p>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="glass-card p-6 rounded-2xl border border-primary/20">
+                <h3 className="text-2xl font-bold text-primary mb-2">Design Process</h3>
+                <p className="text-foreground/80">Double Diamond framework for structured, iterative solutions</p>
+              </div>
+              <div className="glass-card p-6 rounded-2xl border border-accent/20">
+                <h3 className="text-2xl font-bold text-accent mb-2">Focus Areas</h3>
+                <p className="text-foreground/80">User research, accessibility, visual systems, prototyping</p>
+              </div>
+              <div className="glass-card p-6 rounded-2xl border border-primary/20">
+                <h3 className="text-2xl font-bold text-primary mb-2">Location</h3>
+                <p className="text-foreground/80">📍 Based in Karlstad, available worldwide</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Projects Grid */}
-      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" role="main" aria-labelledby="projects-heading">
-        <div className="text-center mb-16">
-          <h2 id="projects-heading" className="text-5xl font-bold gradient-text mb-6">Selected Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            A curated selection of UX/UI and Graphic Design work. Click on a card to explore the case study.
+      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32" role="main" aria-labelledby="projects-heading">
+        <div className="text-center mb-20">
+          <h2 id="projects-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-6">Selected Works</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            A curated collection of design projects showcasing UX research, visual design, and user-centered solutions
           </p>
         </div>
 
@@ -119,52 +185,56 @@ const Index = () => {
         </div>
       </main>
 
-      {/* Contact Section */}
-      <section id="contact" className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24" aria-labelledby="contact-heading">
-        <div className="glass-card rounded-3xl p-10 md:p-14 text-center border-border/50">
-          <h2 id="contact-heading" className="text-5xl font-bold gradient-text mb-6">Get in Touch</h2>
-          <p className="text-lg text-foreground/80 mb-10 leading-relaxed">
-            Have a project idea, collaboration request, or just want to talk design? I'd love to hear from you.
+      {/* Contact Section - Simplified */}
+      <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="contact-heading">
+        <div className="glass-card rounded-3xl p-12 md:p-20 text-center border border-primary/20">
+          <h2 id="contact-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-8">Let's Talk</h2>
+          <p className="text-xl text-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
+            Whether you're a design team in need of support or an early-stage company looking to level up your design, 
+            I'd love to talk about your project 💜
           </p>
           
-          <div className="space-y-6">
+          <a 
+            href="mailto:arnborg.samuel@gmail.com" 
+            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground font-bold rounded-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 relative overflow-hidden group text-lg"
+            aria-label="Send email to arnborg.samuel@gmail.com"
+          >
+            <Mail className="w-5 h-5 relative z-10" />
+            <span className="relative z-10">Drop me a line</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-accent via-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          </a>
+          
+          <div className="flex justify-center items-center gap-6 pt-12 mt-12 border-t border-border/30">
+            <span className="text-sm text-muted-foreground">or say 👋 on</span>
             <a 
-              href="mailto:arnborg.samuel@gmail.com" 
-              className="block text-center px-8 py-5 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground font-bold rounded-xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 relative overflow-hidden group"
-              aria-label="Send email to arnborg.samuel@gmail.com"
+              href="https://www.linkedin.com/in/samuel-arnborg-5a0145337/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-110"
+              aria-label="LinkedIn"
             >
-              <span className="relative z-10">Send Me an Email</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent via-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              LinkedIn
             </a>
-            
-            <div className="flex justify-center items-center gap-8 pt-4">
-              <a 
-                href="https://www.linkedin.com/in/samuel-arnborg-5a0145337/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg hover:scale-110"
-                aria-label="Visit Samuel Arnborg's LinkedIn profile (opens in new tab)"
-              >
-                LinkedIn
-              </a>
-              <span className="text-border" aria-hidden="true">•</span>
-              <a 
-                href="https://github.com/Aborgz" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg hover:scale-110"
-                aria-label="Visit Samuel Arnborg's GitHub profile (opens in new tab)"
-              >
-                GitHub
-              </a>
-            </div>
+            <span className="text-border" aria-hidden="true">•</span>
+            <a 
+              href="https://github.com/Aborgz" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-110"
+              aria-label="GitHub"
+            >
+              GitHub
+            </a>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 mt-16 border-t border-border/30 text-center">
-        <p className="text-sm text-muted-foreground">&copy; 2025 Samuel Arnborg | Design & UX</p>
+      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-border/30">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-muted-foreground">© 2025 Samuel Arnborg | Design & UX</p>
+          <p className="text-xs text-muted-foreground/60">Cooked with love in Karlstad 🇸🇪</p>
+        </div>
       </footer>
     </div>
   );
