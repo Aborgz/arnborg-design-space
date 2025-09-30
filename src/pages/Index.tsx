@@ -61,6 +61,7 @@ const Index = () => {
               src={profilePhoto} 
               alt="Samuel Arnborg - UX Designer and Graphic Artist"
               className="w-48 h-48 md:w-56 md:h-56 rounded-2xl object-cover border-2 border-border shadow-lg"
+              style={{ objectPosition: 'center 20%' }}
             />
           </div>
           
