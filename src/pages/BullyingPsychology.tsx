@@ -50,9 +50,9 @@ const BullyingPsychology = () => {
             <h2 className="text-4xl font-bold text-foreground mb-6">Project Overview</h2>
             <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
               <p>
-                Inspired by Stig Dagerman's haunting essay "Att döda ett barn" (To Kill a Child), 
-                I created this novel cover design that explores the psychological devastation of childhood 
-                bullying—a trauma that slowly erases the essence of who a child could become.
+                Inspired by Stig Dagerman's haunting essay "Att döda ett barn," I created this novel 
+                cover design titled "How to Kill a Child" that explores the psychological devastation 
+                of childhood bullying—a trauma that slowly erases the essence of who a child could become.
               </p>
               <p>
                 The title is deliberately provocative, forcing us to confront an uncomfortable truth: 
