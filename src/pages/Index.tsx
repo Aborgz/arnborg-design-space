@@ -110,12 +110,12 @@ const Index = () => {
           </div>
 
           <h1 id="hero-heading" className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
-            <span className="block text-2xl md:text-3xl tracking-[0.3em] uppercase text-muted-foreground font-light mb-8 animate-fade-in">
+            <span className="block text-2xl md:text-3xl tracking-[0.3em] uppercase text-muted-foreground font-light mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
               Samuel Arnborg
             </span>
-            <span className="block">UX DESIGNER</span>
-            <span className="block" aria-hidden="true">&</span>
-            <span className="block">GRAPHIC ARTIST</span>
+            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>UX DESIGNER</span>
+            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }} aria-hidden="true">&</span>
+            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>GRAPHIC ARTIST</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
