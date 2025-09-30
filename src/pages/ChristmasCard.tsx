@@ -52,15 +52,15 @@ const ChristmasCard = () => {
             <h2 className="text-4xl font-bold text-foreground mb-6">Project Overview</h2>
             <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
               <p>
-                The Merry Christmas Video Card project brought digital creativity to elementary school 
-                classrooms, empowering young students to create personalized animated holiday greetings 
+                I created the Merry Christmas Video Card project to bring digital creativity into elementary 
+                school classrooms, empowering young students to create personalized animated holiday greetings 
                 for their families and friends. This initiative combined festive joy with fundamental 
                 digital literacy skills.
               </p>
               <p>
-                Over three weeks, students learned basic animation principles, digital storytelling techniques, 
-                and the power of visual communication—all while crafting heartfelt messages that celebrated 
-                the holiday season and strengthened family connections.
+                Over three weeks, I guided students through basic animation principles, digital storytelling 
+                techniques, and the power of visual communication—all while they crafted heartfelt messages 
+                that celebrated the holiday season and strengthened family connections.
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ const ChristmasCard = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Animation Basics</h3>
               <p className="text-foreground/80 leading-relaxed">
-                Students learned frame-by-frame animation concepts, timing, and movement through 
+                I taught students frame-by-frame animation concepts, timing, and movement through 
                 user-friendly digital tools designed for young learners. Each child created their 
                 own animated characters and holiday scenes.
               </p>
@@ -107,8 +107,8 @@ const ChristmasCard = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Collaboration Skills</h3>
               <p className="text-foreground/80 leading-relaxed">
-                Students worked in pairs and small groups, sharing ideas, providing feedback, and 
-                learning from each other. Teamwork became an integral part of the creative process.
+                I encouraged students to work in pairs and small groups, sharing ideas, providing feedback, 
+                and learning from each other. Teamwork became an integral part of the creative process.
               </p>
             </div>
           </div>
@@ -124,7 +124,7 @@ const ChristmasCard = () => {
                 <div>
                   <h4 className="text-xl font-semibold text-foreground mb-2">Digital Literacy</h4>
                   <p className="text-foreground/80">
-                    Students gained confidence using digital tools, understanding file management, 
+                    I helped students gain confidence using digital tools, understanding file management, 
                     and navigating creative software—foundational skills for the digital age.
                   </p>
                 </div>
@@ -137,7 +137,7 @@ const ChristmasCard = () => {
                 <div>
                   <h4 className="text-xl font-semibold text-foreground mb-2">Visual Storytelling</h4>
                   <p className="text-foreground/80">
-                    Children learned how to convey emotions, messages, and narratives through images, 
+                    I taught children how to convey emotions, messages, and narratives through images, 
                     animation, and music—a crucial skill in modern communication.
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const ChristmasCard = () => {
                 <div>
                   <h4 className="text-xl font-semibold text-foreground mb-2">Problem-Solving</h4>
                   <p className="text-foreground/80">
-                    Technical challenges became opportunities to develop resilience, critical thinking, 
+                    I turned technical challenges into opportunities to develop resilience, critical thinking, 
                     and creative problem-solving abilities in a supportive environment.
                   </p>
                 </div>
@@ -163,7 +163,7 @@ const ChristmasCard = () => {
                 <div>
                   <h4 className="text-xl font-semibold text-foreground mb-2">Emotional Intelligence</h4>
                   <p className="text-foreground/80">
-                    Crafting heartfelt messages helped students articulate feelings, practice empathy, 
+                    Through crafting heartfelt messages, I helped students articulate feelings, practice empathy, 
                     and understand the impact of thoughtful communication.
                   </p>
                 </div>
@@ -187,31 +187,6 @@ const ChristmasCard = () => {
                 Your browser does not support the video tag.
               </video>
             </div>
-          </div>
-
-          {/* Impact */}
-          <div className="glass-card rounded-3xl p-12">
-            <h2 className="text-4xl font-bold text-foreground mb-6">Project Impact</h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">120+</div>
-                <p className="text-muted-foreground">Students Participated</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">150+</div>
-                <p className="text-muted-foreground">Videos Created</p>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">95%</div>
-                <p className="text-muted-foreground">Parent Satisfaction</p>
-              </div>
-            </div>
-            <p className="text-lg text-foreground/90 leading-relaxed text-center">
-              Parents reported that receiving these personalized video cards was one of the most 
-              meaningful gifts they'd ever received, with many keeping them as cherished digital 
-              keepsakes. Teachers noted increased engagement in technology classes and a newfound 
-              enthusiasm for digital creativity among students.
-            </p>
           </div>
 
           {/* Testimonials */}

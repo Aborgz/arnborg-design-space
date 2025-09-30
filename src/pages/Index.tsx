@@ -225,7 +225,7 @@ const Index = () => {
             { name: 'After Effects', color: 'from-purple-600/20 to-violet-500/20' },
             { name: 'XD', color: 'from-fuchsia-500/20 to-pink-500/20' },
             { name: 'Premiere Pro', color: 'from-indigo-500/20 to-purple-500/20' },
-            { name: 'Sketch', color: 'from-amber-500/20 to-yellow-500/20' },
+            { name: 'FL Studio', color: 'from-orange-600/20 to-red-600/20' },
             { name: 'Blender', color: 'from-orange-600/20 to-amber-500/20' }
           ].map((tool) => (
             <div 
