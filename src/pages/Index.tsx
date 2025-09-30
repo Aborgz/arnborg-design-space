@@ -34,20 +34,25 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Skip to main content link for keyboard users */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
       {/* Header / Navigation */}
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-border/50 sticky top-0 glass-card z-10">
+      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-border/50 sticky top-0 glass-card z-10" role="banner">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <h1 className="text-3xl font-bold tracking-tight">
             <span className="gradient-text">Samuel Arnborg</span>
           </h1>
-          <nav className="mt-4 md:mt-0 space-x-8">
-            <a href="#projects" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">
+          <nav className="mt-4 md:mt-0 space-x-8" role="navigation" aria-label="Main navigation">
+            <a href="#projects" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View projects section">
               Projects
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">
+            <a href="#about" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View about section">
               About
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full">
+            <a href="#contact" className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full" aria-label="View contact section">
               Contact
             </a>
           </nav>
@@ -55,8 +60,8 @@ const Index = () => {
       </header>
 
       {/* About Section */}
-      <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <h2 className="text-5xl font-bold gradient-text mb-12">About Me</h2>
+      <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24" aria-labelledby="about-heading">
+        <h2 id="about-heading" className="text-5xl font-bold gradient-text mb-12">About Me</h2>
         <div className="glass-card rounded-3xl p-8 md:p-12">
           <div className="flex flex-col md:flex-row gap-10 items-start">
             {/* Profile Photo */}
@@ -92,9 +97,9 @@ const Index = () => {
       </section>
 
       {/* Projects Grid */}
-      <main id="projects" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" role="main" aria-labelledby="projects-heading">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold gradient-text mb-6">Selected Projects</h2>
+          <h2 id="projects-heading" className="text-5xl font-bold gradient-text mb-6">Selected Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A curated selection of UX/UI and Graphic Design work. Click on a card to explore the case study.
           </p>
@@ -114,9 +119,9 @@ const Index = () => {
       </main>
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+      <section id="contact" className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-24" aria-labelledby="contact-heading">
         <div className="glass-card rounded-3xl p-10 md:p-14 text-center border-border/50">
-          <h2 className="text-5xl font-bold gradient-text mb-6">Get in Touch</h2>
+          <h2 id="contact-heading" className="text-5xl font-bold gradient-text mb-6">Get in Touch</h2>
           <p className="text-lg text-foreground/80 mb-10 leading-relaxed">
             Have a project idea, collaboration request, or just want to talk design? I'd love to hear from you.
           </p>
@@ -126,6 +131,7 @@ const Index = () => {
               href="mailto:arnborg.samuel@gmail.com" 
               className="block text-center px-8 py-5 bg-gradient-to-r from-primary to-accent hover:shadow-glow text-primary-foreground font-bold rounded-xl transition-all duration-500 hover:scale-105 hover:-translate-y-1"
               style={{ boxShadow: '0 10px 40px hsl(258 90% 66% / 0.3)' }}
+              aria-label="Send email to arnborg.samuel@gmail.com"
             >
               Send Me an Email
             </a>
@@ -136,15 +142,17 @@ const Index = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg hover:scale-110"
+                aria-label="Visit Samuel Arnborg's LinkedIn profile (opens in new tab)"
               >
                 LinkedIn
               </a>
-              <span className="text-border">•</span>
+              <span className="text-border" aria-hidden="true">•</span>
               <a 
                 href="https://github.com/Aborgz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium text-lg hover:scale-110"
+                aria-label="Visit Samuel Arnborg's GitHub profile (opens in new tab)"
               >
                 GitHub
               </a>

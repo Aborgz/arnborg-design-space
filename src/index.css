@@ -80,6 +80,24 @@
   .code-text {
     font-family: 'IBM Plex Mono', monospace;
   }
+
+  /* WCAG Focus Indicators for Accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply ring-2 ring-primary ring-offset-2 ring-offset-background transition-all duration-200;
+  }
+
+  /* Skip to main content link for keyboard navigation */
+  .skip-link {
+    @apply absolute left-4 top-4 bg-primary text-primary-foreground px-6 py-3 z-50 rounded-lg font-medium;
+    @apply -translate-y-20 focus:translate-y-0 transition-transform duration-200;
+  }
 }
 
 @layer components {

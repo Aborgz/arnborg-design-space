@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
   const content = (
-    <div className="block project-card rounded-2xl border-0 overflow-hidden group">
+    <div className="block project-card rounded-2xl border-0 overflow-hidden group" role="article" aria-label={`${title} project card`}>
       <div className="p-6">
         {/* Project Visual with gradient overlay */}
         <div className="h-52 bg-secondary rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
@@ -48,10 +48,10 @@ const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
   );
   
   if (link) {
-    return <Link to={link}>{content}</Link>;
+    return <Link to={link} aria-label={`View ${title} project details`}>{content}</Link>;
   }
   
-  return <a href="#">{content}</a>;
+  return <div role="article">{content}</div>;
 };
 
 export default ProjectCard;

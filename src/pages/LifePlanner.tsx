@@ -8,21 +8,27 @@ import screen3 from "@/assets/lifeplanner-screen3.png";
 const LifePlanner = () => {
   return (
     <div className="min-h-screen bg-background">
+      {/* Skip to main content link for keyboard users */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
       {/* Header */}
-      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-border/50 sticky top-0 glass-card z-10">
+      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-b border-border/50 sticky top-0 glass-card z-10" role="banner">
         <Link 
           to="/" 
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300 font-medium group"
+          aria-label="Return to portfolio homepage"
         >
-          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" />
+          <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform duration-300" aria-hidden="true" />
           Back to Portfolio
         </Link>
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section id="main-content" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20" role="main" aria-labelledby="project-title">
         <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-7xl font-bold gradient-text mb-6">
+          <h1 id="project-title" className="text-6xl md:text-7xl font-bold gradient-text mb-6">
             LifePlanner
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -35,15 +41,15 @@ const LifePlanner = () => {
           <div className="relative overflow-hidden rounded-2xl">
             <img 
               src={heroImage} 
-              alt="LifePlanner App Overview"
+              alt="LifePlanner application interface showing the main dashboard with weekly planning view, custom lists, and progress tracking features"
               className="w-full h-auto"
             />
           </div>
         </div>
 
         {/* Design Process Section */}
-        <div className="glass-card rounded-3xl p-8 md:p-12 mb-20">
-          <h2 className="text-4xl font-bold gradient-text mb-8">Design Process</h2>
+        <div className="glass-card rounded-3xl p-8 md:p-12 mb-20" role="region" aria-labelledby="design-process-heading">
+          <h2 id="design-process-heading" className="text-4xl font-bold gradient-text mb-8">Design Process</h2>
           <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
             <p>
               Our work followed the <strong className="text-primary">Double Diamond model</strong>, a recognized design framework that guides teams from broad exploration of a problem to the development of focused solutions.
@@ -61,14 +67,14 @@ const LifePlanner = () => {
         </div>
 
         {/* App Screens */}
-        <div className="space-y-12 mb-20">
-          <h2 className="text-4xl font-bold gradient-text text-center">App Screens</h2>
+        <div className="space-y-12 mb-20" role="region" aria-labelledby="app-screens-heading">
+          <h2 id="app-screens-heading" className="text-4xl font-bold gradient-text text-center">App Screens</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="glass-card rounded-2xl p-6 group hover:scale-105 transition-all duration-500">
               <img 
                 src={screen1} 
-                alt="LifePlanner List View"
+                alt="LifePlanner list view interface displaying custom categorized lists for managing different life aspects"
                 className="w-full h-auto rounded-xl mb-4"
               />
               <h3 className="text-xl font-bold gradient-text mb-2">List Management</h3>
@@ -80,7 +86,7 @@ const LifePlanner = () => {
             <div className="glass-card rounded-2xl p-6 group hover:scale-105 transition-all duration-500">
               <img 
                 src={screen2} 
-                alt="LifePlanner Progress Tracking"
+                alt="LifePlanner progress tracking screen with visual charts showing weekly and monthly completion metrics"
                 className="w-full h-auto rounded-xl mb-4"
               />
               <h3 className="text-xl font-bold gradient-text mb-2">Progress Tracking</h3>
@@ -92,7 +98,7 @@ const LifePlanner = () => {
             <div className="glass-card rounded-2xl p-6 group hover:scale-105 transition-all duration-500">
               <img 
                 src={screen3} 
-                alt="LifePlanner Weekly View"
+                alt="LifePlanner weekly planning view with organized tasks and schedules in a clean, minimalist layout"
                 className="w-full h-auto rounded-xl mb-4"
               />
               <h3 className="text-xl font-bold gradient-text mb-2">Weekly Planning</h3>
@@ -104,8 +110,8 @@ const LifePlanner = () => {
         </div>
 
         {/* Key Features */}
-        <div className="glass-card rounded-3xl p-8 md:p-12">
-          <h2 className="text-4xl font-bold gradient-text mb-8">Key Features</h2>
+        <div className="glass-card rounded-3xl p-8 md:p-12" role="region" aria-labelledby="key-features-heading">
+          <h2 id="key-features-heading" className="text-4xl font-bold gradient-text mb-8">Key Features</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-3">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
