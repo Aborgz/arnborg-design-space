@@ -154,13 +154,6 @@ const BullyingPsychology = () => {
             </div>
           </div>
 
-          {/* Impact Statement */}
-          <div className="text-center glass-card rounded-3xl p-12">
-            <blockquote className="text-2xl md:text-3xl font-light text-foreground/90 italic leading-relaxed">
-              "The greatest tragedy of bullying is not the pain inflicted in the moment, 
-              but the theft of who that child could have become."
-            </blockquote>
-          </div>
         </div>
       </section>
     </div>

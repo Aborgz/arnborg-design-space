@@ -189,28 +189,6 @@ const ChristmasCard = () => {
             </div>
           </div>
 
-          {/* Testimonials */}
-          <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-foreground mb-8 text-center">What Parents Said</h2>
-            
-            <div className="glass-card rounded-2xl p-8 border border-primary/20">
-              <p className="text-lg text-foreground/90 italic mb-4">
-                "I cried when I watched my daughter's video. She put so much thought and love 
-                into every detail. This project taught her skills she'll use forever, but more 
-                importantly, it helped her express her love in a new way."
-              </p>
-              <p className="text-sm text-muted-foreground">— Parent, Grade 3</p>
-            </div>
-
-            <div className="glass-card rounded-2xl p-8 border border-accent/20">
-              <p className="text-lg text-foreground/90 italic mb-4">
-                "My son was so proud to show me what he created. He learned technical skills, 
-                sure, but he also learned patience, creativity, and the joy of making something 
-                meaningful for others. Best school project ever!"
-              </p>
-              <p className="text-sm text-muted-foreground">— Parent, Grade 4</p>
-            </div>
-          </div>
         </div>
       </section>
     </div>
