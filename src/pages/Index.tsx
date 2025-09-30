@@ -133,45 +133,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="glass-card rounded-3xl p-8 md:p-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center space-y-3">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
-                <Briefcase className="w-6 h-6" aria-hidden="true" />
-              </div>
-              <div className="text-4xl md:text-5xl font-bold text-foreground">5+</div>
-              <p className="text-sm text-muted-foreground">Years Experience</p>
-            </div>
-            
-            <div className="text-center space-y-3">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
-                <Users className="w-6 h-6" aria-hidden="true" />
-              </div>
-              <div className="text-4xl md:text-5xl font-bold text-foreground">50+</div>
-              <p className="text-sm text-muted-foreground">Projects Delivered</p>
-            </div>
-            
-            <div className="text-center space-y-3">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
-                <Award className="w-6 h-6" aria-hidden="true" />
-              </div>
-              <div className="text-4xl md:text-5xl font-bold text-foreground">100%</div>
-              <p className="text-sm text-muted-foreground">Client Satisfaction</p>
-            </div>
-            
-            <div className="text-center space-y-3">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
-                <BookOpen className="w-6 h-6" aria-hidden="true" />
-              </div>
-              <div className="text-4xl md:text-5xl font-bold text-foreground">10+</div>
-              <p className="text-sm text-muted-foreground">Frameworks Mastered</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section - Redesigned */}
       <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="about-heading">
         <div className="glass-card rounded-3xl p-12 md:p-16">
