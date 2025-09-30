@@ -100,15 +100,14 @@ const Index = () => {
         <div className="text-center max-w-5xl mx-auto space-y-12">
           {/* Profile Photo */}
           <div className="relative inline-block">
-            <img 
-              src={profilePhoto} 
-              alt="Samuel Arnborg, professional headshot"
-              className="relative w-40 h-40 rounded-full object-cover mx-auto"
-              style={{ 
-                objectPosition: 'center 20%', 
-                filter: 'drop-shadow(0 0 40px rgba(255, 115, 45, 0.3)) drop-shadow(0 20px 40px rgba(0,0,0,0.5))'
-              }}
-            />
+            <div className="mx-auto w-40 h-40 rounded-full overflow-hidden shadow-xl">
+              <img 
+                src={profilePhoto} 
+                alt="Samuel Arnborg, professional headshot"
+                className="w-full h-full object-cover"
+                style={{ objectPosition: 'center 20%' }}
+              />
+            </div>
           </div>
 
           <h1 id="hero-heading" className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
