@@ -72,7 +72,7 @@ const Index = () => {
                 src={profilePhoto} 
                 alt="Samuel Arnborg - UX Designer and Graphic Artist"
                 className="relative w-56 h-56 md:w-64 md:h-64 rounded-3xl object-cover border-2 border-primary/30 shadow-2xl transition-all duration-700 group-hover:scale-105 group-hover:border-primary/60"
-                style={{ objectPosition: 'center 20%', boxShadow: '0 20px 60px hsl(195 100% 50% / 0.3)' }}
+                style={{ objectPosition: 'center 20%', boxShadow: '0 20px 60px hsl(265 85% 65% / 0.3)' }}
               />
             </div>
             

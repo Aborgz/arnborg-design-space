@@ -18,9 +18,9 @@
     --popover: 240 10% 6%;
     --popover-foreground: 0 0% 98%;
 
-    /* Electric cyan-blue primary (2025 cyber trend) */
-    --primary: 195 100% 50%;
-    --primary-glow: 190 100% 60%;
+    /* Electric purple primary (2025 cyber trend) */
+    --primary: 265 85% 65%;
+    --primary-glow: 270 85% 70%;
     --primary-foreground: 240 10% 3.9%;
 
     --secondary: 240 10% 12%;
@@ -29,9 +29,9 @@
     --muted: 240 10% 12%;
     --muted-foreground: 240 5% 64.9%;
 
-    /* Vibrant accent - electric magenta */
-    --accent: 320 100% 58%;
-    --accent-glow: 315 100% 65%;
+    /* Vibrant accent - electric amber */
+    --accent: 35 95% 60%;
+    --accent-glow: 40 95% 65%;
     --accent-foreground: 0 0% 98%;
 
     /* Success green */
@@ -43,22 +43,22 @@
 
     --border: 240 10% 15%;
     --input: 240 10% 15%;
-    --ring: 195 100% 50%;
+    --ring: 265 85% 65%;
 
     --radius: 1rem;
     
     /* 2025 Design tokens - bold cyber gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(280 100% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(320 100% 58%) 50%, hsl(280 80% 55%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(265 85% 65%) 0%, hsl(35 95% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(265 85% 65%) 0%, hsl(35 95% 60%) 50%, hsl(280 80% 55%) 100%);
     --gradient-card: linear-gradient(135deg, hsl(240 10% 6% / 0.9) 0%, hsl(240 10% 8% / 0.8) 100%);
-    --gradient-mesh: radial-gradient(at 40% 20%, hsl(195 100% 50% / 0.15) 0px, transparent 50%),
-                      radial-gradient(at 80% 0%, hsl(320 100% 58% / 0.15) 0px, transparent 50%),
+    --gradient-mesh: radial-gradient(at 40% 20%, hsl(265 85% 65% / 0.15) 0px, transparent 50%),
+                      radial-gradient(at 80% 0%, hsl(35 95% 60% / 0.15) 0px, transparent 50%),
                       radial-gradient(at 0% 50%, hsl(280 80% 55% / 0.1) 0px, transparent 50%);
     
     /* Modern shadows with color */
-    --shadow-glow: 0 0 60px hsl(195 100% 50% / 0.3), 0 0 100px hsl(320 100% 58% / 0.2);
-    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.5), 0 0 1px hsl(195 100% 50% / 0.2);
-    --shadow-hover: 0 20px 60px hsl(195 100% 50% / 0.4), 0 0 80px hsl(320 100% 58% / 0.3);
+    --shadow-glow: 0 0 60px hsl(265 85% 65% / 0.3), 0 0 100px hsl(35 95% 60% / 0.2);
+    --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.5), 0 0 1px hsl(265 85% 65% / 0.2);
+    --shadow-hover: 0 20px 60px hsl(265 85% 65% / 0.4), 0 0 80px hsl(35 95% 60% / 0.3);
     --blur-glass: blur(16px);
 
     --sidebar-background: 0 0% 98%;
@@ -68,7 +68,7 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 195 100% 50%;
+    --sidebar-ring: 265 85% 65%;
   }
 }
 
@@ -92,14 +92,14 @@
   /* WCAG Focus Indicators for Accessibility */
   *:focus-visible {
     @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
-    outline: 2px solid hsl(195 100% 50%);
+    outline: 2px solid hsl(265 85% 65%);
     outline-offset: 2px;
   }
 
   a:focus-visible,
   button:focus-visible {
     @apply ring-2 ring-primary ring-offset-2 ring-offset-background transition-all duration-200;
-    box-shadow: 0 0 20px hsl(195 100% 50% / 0.4);
+    box-shadow: 0 0 20px hsl(265 85% 65% / 0.4);
   }
 
   /* Skip to main content link for keyboard navigation */
@@ -118,7 +118,7 @@
     backdrop-filter: blur(16px);
     box-shadow: 0 8px 32px hsl(0 0% 0% / 0.4), 
                 0 0 0 1px hsl(240 10% 15% / 0.6),
-                inset 0 1px 0 hsl(195 100% 50% / 0.1);
+                inset 0 1px 0 hsl(265 85% 65% / 0.1);
   }
 
   .project-card::before {
@@ -127,7 +127,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, hsl(195 100% 50% / 0.3), hsl(320 100% 58% / 0.3));
+    background: linear-gradient(135deg, hsl(265 85% 65% / 0.3), hsl(35 95% 60% / 0.3));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -142,23 +142,23 @@
 
   .project-card:hover {
     @apply scale-[1.04] -translate-y-2;
-    box-shadow: 0 25px 50px hsl(195 100% 50% / 0.3), 
-                0 0 80px hsl(320 100% 58% / 0.25),
-                0 0 0 1px hsl(195 100% 50% / 0.4);
+    box-shadow: 0 25px 50px hsl(265 85% 65% / 0.3), 
+                0 0 80px hsl(35 95% 60% / 0.25),
+                0 0 0 1px hsl(265 85% 65% / 0.4);
   }
 
   /* Bold gradient text effect - 2025 cyber style */
   .gradient-text {
     @apply bg-clip-text text-transparent font-bold;
-    background-image: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(320 100% 58%) 100%);
-    filter: drop-shadow(0 0 20px hsl(195 100% 50% / 0.3));
+    background-image: linear-gradient(135deg, hsl(265 85% 65%) 0%, hsl(35 95% 60%) 100%);
+    filter: drop-shadow(0 0 20px hsl(265 85% 65% / 0.3));
   }
 
   /* Enhanced glass card effect */
   .glass-card {
     @apply backdrop-blur-xl bg-card/60 border border-border/60 relative overflow-hidden;
     box-shadow: 0 8px 32px hsl(0 0% 0% / 0.4), 
-                inset 0 1px 0 hsl(195 100% 50% / 0.1);
+                inset 0 1px 0 hsl(265 85% 65% / 0.1);
   }
 
   .glass-card::after {
@@ -168,7 +168,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, hsl(195 100% 50% / 0.1), transparent);
+    background: linear-gradient(90deg, transparent, hsl(265 85% 65% / 0.1), transparent);
     transition: left 0.7s ease;
   }
 
