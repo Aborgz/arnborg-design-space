@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import profilePhoto from "@/assets/samuel-profile.jpg";
 import lifeplannerImage from "@/assets/lifeplanner-preview.png";
+import bullyingProjectImage from "@/assets/bullying-project.jpg";
 import { Mail, Linkedin, Github, Briefcase, Users, Award, BookOpen } from "lucide-react";
 
 const Index = () => {
@@ -12,8 +13,13 @@ const Index = () => {
       link: "/projects/lifeplanner"
     },
     {
-      title: "Coming Soon",
-      description: "Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+      title: "The Psychology of Bullying",
+      description: "An exploration of how childhood bullying shapes adult psychology. Research shows that victims of sustained bullying often carry invisible scars—altered stress responses, diminished self-worth, and fragmented identity. This visual project examines the lasting neurological and emotional imprints that persist long after the bullying stops, revealing how early trauma rewires our perception of safety, trust, and belonging.",
+      image: bullyingProjectImage
+    },
+    {
+      title: "Merry Christmas Video Card",
+      description: "A heartwarming digital Christmas card project created for elementary school students. This interactive video experience taught young learners about digital storytelling, animation basics, and the joy of sharing seasonal messages with family and friends through modern media."
     },
     {
       title: "Coming Soon",
@@ -26,10 +32,6 @@ const Index = () => {
     {
       title: "Coming Soon",
       description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint."
-    },
-    {
-      title: "Coming Soon",
-      description: "Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse."
     }
   ];
 
