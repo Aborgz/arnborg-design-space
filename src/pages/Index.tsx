@@ -104,7 +104,7 @@ const Index = () => {
             <img 
               src={profilePhoto} 
               alt="Samuel Arnborg, professional headshot"
-              className="relative w-40 h-40 rounded-full object-cover border-2 border-primary/30 shadow-2xl mx-auto"
+              className="relative w-40 h-40 rounded-full object-cover shadow-2xl mx-auto"
               style={{ objectPosition: 'center 20%' }}
             />
           </div>
