@@ -56,7 +56,7 @@ const Index = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/Aborgz" 
+                href="https://github.com/Arnborgz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
@@ -75,11 +75,11 @@ const Index = () => {
                 About
               </a>
               <a 
-                href="mailto:arnborg.samuel@gmail.com" 
+                href="mailto:arnborg@gmail.com" 
                 className="px-6 py-2.5 bg-primary/10 text-primary border border-primary/20 rounded-full font-medium text-sm hover:bg-primary/20 transition-all duration-300 hover:scale-105"
                 aria-label="Contact via email"
               >
-                contact@samuel.com
+                arnborg@gmail.com
               </a>
             </nav>
           </div>
@@ -89,7 +89,7 @@ const Index = () => {
       {/* Hero Section - KC Studio Inspired */}
       <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20">
         <div className="text-center max-w-5xl mx-auto space-y-12 animate-fade-in">
-          {/* Profile Photo with Status Badge */}
+          {/* Profile Photo */}
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-full blur-3xl animate-pulse" />
             <img 
@@ -98,9 +98,6 @@ const Index = () => {
               className="relative w-40 h-40 rounded-full object-cover border-2 border-primary/30 shadow-2xl mx-auto"
               style={{ objectPosition: 'center 20%' }}
             />
-            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary/20 border border-primary/30 rounded-full backdrop-blur-xl">
-              <span className="text-xs font-medium text-primary">✦ Available for work</span>
-            </div>
           </div>
 
           <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
@@ -194,13 +191,12 @@ const Index = () => {
           </p>
           
           <a 
-            href="mailto:arnborg.samuel@gmail.com" 
-            className="inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground font-bold rounded-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 relative overflow-hidden group text-lg"
-            aria-label="Send email to arnborg.samuel@gmail.com"
+            href="mailto:arnborg@gmail.com" 
+            className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-bold rounded-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 text-lg"
+            aria-label="Send email to arnborg@gmail.com"
           >
-            <Mail className="w-5 h-5 relative z-10" />
-            <span className="relative z-10">Drop me a line</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-accent via-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <Mail className="w-5 h-5" />
+            <span>Drop me a line</span>
           </a>
           
           <div className="flex justify-center items-center gap-6 pt-12 mt-12 border-t border-border/30">
@@ -216,7 +212,7 @@ const Index = () => {
             </a>
             <span className="text-border" aria-hidden="true">•</span>
             <a 
-              href="https://github.com/Aborgz" 
+              href="https://github.com/Arnborgz" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-110"
