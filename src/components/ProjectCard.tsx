@@ -2,11 +2,14 @@ interface ProjectCardProps {
   title: string;
   description: string;
   image?: string;
+  link?: string;
 }
 
-const ProjectCard = ({ title, description, image }: ProjectCardProps) => {
-  return (
-    <a href="#" className="block project-card rounded-2xl border-0 overflow-hidden group">
+import { Link } from "react-router-dom";
+
+const ProjectCard = ({ title, description, image, link }: ProjectCardProps) => {
+  const content = (
+    <div className="block project-card rounded-2xl border-0 overflow-hidden group">
       <div className="p-6">
         {/* Project Visual with gradient overlay */}
         <div className="h-52 bg-secondary rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
@@ -41,8 +44,14 @@ const ProjectCard = ({ title, description, image }: ProjectCardProps) => {
           </p>
         </div>
       </div>
-    </a>
+    </div>
   );
+  
+  if (link) {
+    return <Link to={link}>{content}</Link>;
+  }
+  
+  return <a href="#">{content}</a>;
 };
 
 export default ProjectCard;

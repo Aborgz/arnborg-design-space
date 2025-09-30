@@ -7,7 +7,8 @@ const Index = () => {
     {
       title: "LifePlanner",
       description: "Making it easier to plan so you can enjoy more in life. A comprehensive planning app with weekly, monthly, and custom list management.",
-      image: lifeplannerImage
+      image: lifeplannerImage,
+      link: "/projects/lifeplanner"
     },
     {
       title: "Coming soonn",
@@ -106,6 +107,7 @@ const Index = () => {
               title={project.title}
               description={project.description}
               image={project.image}
+              link={project.link}
             />
           ))}
         </div>
