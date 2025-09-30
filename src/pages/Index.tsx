@@ -78,7 +78,7 @@ const Index = () => {
               simple, elegant solutions that prioritize clarity and accessibility.
             </p>
             <p className="code-text italic text-muted-foreground">
-              Currently based in [Your City Here], available for freelance projects and collaborations.
+              Currently based in Karlstad, available for freelance projects and collaborations.
             </p>
           </div>
         </div>
