@@ -15,7 +15,7 @@ const Index = () => {
     },
     {
       title: "How to Kill a Child",
-      description: "A visual exploration of how childhood bullying leaves lasting psychological scars that shape adult identity, stress responses, and sense of self.",
+      description: "A provocative novel cover design exploring how childhood bullying leaves lasting psychological scars that shape adult identity and sense of self.",
       image: bullyingProjectImage,
       link: "/projects/bullying-psychology"
     },

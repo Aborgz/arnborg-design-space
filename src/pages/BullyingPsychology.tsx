@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import bullyingHero from "@/assets/bullying-hero.jpg";
 import bullyingProject from "@/assets/bullying-project.jpg";
+import bookMockup from "@/assets/book-mockup.jpg";
 
 const BullyingPsychology = () => {
   return (
@@ -50,8 +51,8 @@ const BullyingPsychology = () => {
             <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
               <p>
                 Inspired by Stig Dagerman's haunting essay "Att döda ett barn" (To Kill a Child), 
-                this visual project explores the psychological devastation of childhood bullying—a 
-                trauma that slowly erases the essence of who a child could become.
+                I created this novel cover design that explores the psychological devastation of childhood 
+                bullying—a trauma that slowly erases the essence of who a child could become.
               </p>
               <p>
                 The title is deliberately provocative, forcing us to confront an uncomfortable truth: 
@@ -59,6 +60,15 @@ const BullyingPsychology = () => {
                 trajectory, killing the person they might have been.
               </p>
             </div>
+          </div>
+
+          {/* Book Cover Mockup */}
+          <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <img 
+              src={bookMockup} 
+              alt="Novel cover mockup for How to Kill a Child" 
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Problem & Solution */}
