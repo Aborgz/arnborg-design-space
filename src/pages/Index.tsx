@@ -121,7 +121,7 @@ const Index = () => {
 
           <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
             Over the years, I've created <strong className="text-foreground">intuitive digital experiences</strong><br />
-            that blend rigorous research with minimalist aesthetics
+            that combine thoughtful user research with clean, purposeful design
           </p>
 
           {/* Scroll Indicator */}
