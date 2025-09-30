@@ -124,6 +124,19 @@
 }
 
 @layer components {
+  /* Glitch entrance effect - blinks twice on page load */
+  @keyframes glitch-blink {
+    0%, 10% { opacity: 1; }
+    11%, 20% { opacity: 0; }
+    21%, 40% { opacity: 1; }
+    41%, 50% { opacity: 0; }
+    51%, 100% { opacity: 1; }
+  }
+
+  .glitch-entrance {
+    animation: glitch-blink 0.6s ease-in-out;
+  }
+
   /* 2025 Modern project card with enhanced glassmorphism */
   .project-card {
     @apply transition-all duration-700 ease-out relative;

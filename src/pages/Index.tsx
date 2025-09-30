@@ -96,8 +96,8 @@ const Index = () => {
       </header>
 
       {/* Hero Section - KC Studio Inspired */}
-      <section id="main-content" className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20" role="main" aria-labelledby="hero-heading">
-        <div className="text-center max-w-5xl mx-auto space-y-12 animate-fade-in">
+      <section id="main-content" className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20 glitch-entrance" role="main" aria-labelledby="hero-heading">
+        <div className="text-center max-w-5xl mx-auto space-y-12">
           {/* Profile Photo */}
           <div className="relative inline-block">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-full blur-3xl animate-pulse" aria-hidden="true" />
@@ -110,12 +110,12 @@ const Index = () => {
           </div>
 
           <h1 id="hero-heading" className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
-            <span className="block text-2xl md:text-3xl tracking-[0.3em] uppercase text-muted-foreground font-light mb-8 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            <span className="block text-2xl md:text-3xl tracking-[0.3em] uppercase text-muted-foreground font-light mb-8">
               Samuel Arnborg
             </span>
-            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>UX DESIGNER</span>
-            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }} aria-hidden="true">&</span>
-            <span className="block animate-fade-in opacity-0" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>GRAPHIC ARTIST</span>
+            <span className="block">UX DESIGNER</span>
+            <span className="block" aria-hidden="true">&</span>
+            <span className="block">GRAPHIC ARTIST</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
