@@ -51,35 +51,44 @@ const Index = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                aria-label="LinkedIn profile"
+                aria-label="Visit Samuel Arnborg on LinkedIn (opens in new tab)"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-5 h-5" aria-hidden="true" />
               </a>
               <a 
                 href="https://github.com/Arnborgz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110"
-                aria-label="GitHub profile"
+                aria-label="Visit Samuel Arnborg on GitHub (opens in new tab)"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5" aria-hidden="true" />
               </a>
             </div>
 
             {/* Navigation - Right Side */}
             <nav className="flex items-center gap-8" role="navigation" aria-label="Main navigation">
-              <a href="#projects" className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+              <a 
+                href="#projects" 
+                className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium"
+                aria-label="Navigate to Works section"
+              >
                 Works
               </a>
-              <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium">
+              <a 
+                href="#about" 
+                className="text-sm text-muted-foreground hover:text-primary transition-all duration-300 font-medium"
+                aria-label="Navigate to About section"
+              >
                 About
               </a>
               <a 
                 href="mailto:arnborg@gmail.com" 
                 className="px-6 py-2.5 bg-primary/10 text-primary border border-primary/20 rounded-full font-medium text-sm hover:bg-primary/20 transition-all duration-300 hover:scale-105"
-                aria-label="Contact via email"
+                aria-label="Send email to arnborg@gmail.com"
               >
-                arnborg@gmail.com
+                <span aria-hidden="true">arnborg@gmail.com</span>
+                <span className="sr-only">Contact via email</span>
               </a>
             </nav>
           </div>
@@ -87,32 +96,32 @@ const Index = () => {
       </header>
 
       {/* Hero Section - KC Studio Inspired */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <section id="main-content" className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 pt-32 pb-20" role="main" aria-labelledby="hero-heading">
         <div className="text-center max-w-5xl mx-auto space-y-12 animate-fade-in">
           {/* Profile Photo */}
           <div className="relative inline-block">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-full blur-3xl animate-pulse" aria-hidden="true" />
             <img 
               src={profilePhoto} 
-              alt="Samuel Arnborg - UX Designer"
+              alt="Samuel Arnborg, professional headshot"
               className="relative w-40 h-40 rounded-full object-cover border-2 border-primary/30 shadow-2xl mx-auto"
               style={{ objectPosition: 'center 20%' }}
             />
           </div>
 
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
+          <h1 id="hero-heading" className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
             <span className="block">UX DESIGNER</span>
-            <span className="block">&</span>
+            <span className="block" aria-hidden="true">&</span>
             <span className="block">GRAPHIC ARTIST</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
-            Over the years, I've created <strong className="text-primary">intuitive digital experiences</strong><br />
+          <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+            Over the years, I've created <strong className="text-foreground">intuitive digital experiences</strong><br />
             that blend rigorous research with minimalist aesthetics
           </p>
 
           {/* Scroll Indicator */}
-          <div className="pt-12 animate-bounce">
+          <div className="pt-12 animate-bounce" aria-hidden="true">
             <div className="w-6 h-10 border-2 border-primary/30 rounded-full mx-auto flex items-start justify-center p-2">
               <div className="w-1 h-3 bg-primary rounded-full" />
             </div>
@@ -128,7 +137,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
               <p>
-                I am a passionate <strong className="text-primary">UX Designer and Graphic Artist</strong> focused on creating intuitive, 
+                I am a passionate <strong className="text-foreground">UX Designer and Graphic Artist</strong> focused on creating intuitive, 
                 human-centered digital experiences and impactful visual branding.
               </p>
               <p>
@@ -141,18 +150,20 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="space-y-6">
-              <div className="glass-card p-6 rounded-2xl border border-primary/20">
-                <h3 className="text-2xl font-bold text-primary mb-2">Design Process</h3>
+            <div className="space-y-6" role="list">
+              <div className="glass-card p-6 rounded-2xl border border-primary/20" role="listitem">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Design Process</h3>
                 <p className="text-foreground/80">Double Diamond framework for structured, iterative solutions</p>
               </div>
-              <div className="glass-card p-6 rounded-2xl border border-accent/20">
-                <h3 className="text-2xl font-bold text-accent mb-2">Focus Areas</h3>
+              <div className="glass-card p-6 rounded-2xl border border-accent/20" role="listitem">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Focus Areas</h3>
                 <p className="text-foreground/80">User research, accessibility, visual systems, prototyping</p>
               </div>
-              <div className="glass-card p-6 rounded-2xl border border-primary/20">
-                <h3 className="text-2xl font-bold text-primary mb-2">Location</h3>
-                <p className="text-foreground/80">📍 Based in Karlstad, available worldwide</p>
+              <div className="glass-card p-6 rounded-2xl border border-primary/20" role="listitem">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Location</h3>
+                <p className="text-foreground/80">
+                  <span aria-label="Located in">📍</span> Based in Karlstad, available worldwide
+                </p>
               </div>
             </div>
           </div>
@@ -160,7 +171,7 @@ const Index = () => {
       </section>
 
       {/* Projects Grid */}
-      <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32" role="main" aria-labelledby="projects-heading">
+      <section id="projects" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="projects-heading">
         <div className="text-center mb-20">
           <h2 id="projects-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-6">Selected Works</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -179,7 +190,7 @@ const Index = () => {
             />
           ))}
         </div>
-      </main>
+      </section>
 
       {/* Contact Section - Simplified */}
       <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="contact-heading">
@@ -187,26 +198,26 @@ const Index = () => {
           <h2 id="contact-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-8">Let's Talk</h2>
           <p className="text-xl text-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
             Whether you're a design team in need of support or an early-stage company looking to level up your design, 
-            I'd love to talk about your project 💜
+            I'd love to talk about your project <span role="img" aria-label="purple heart">💜</span>
           </p>
           
           <a 
             href="mailto:arnborg@gmail.com" 
             className="inline-flex items-center gap-3 px-10 py-5 bg-primary text-primary-foreground font-bold rounded-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 text-lg"
-            aria-label="Send email to arnborg@gmail.com"
+            aria-label="Send email to arnborg at gmail dot com"
           >
-            <Mail className="w-5 h-5" />
+            <Mail className="w-5 h-5" aria-hidden="true" />
             <span>Drop me a line</span>
           </a>
           
-          <div className="flex justify-center items-center gap-6 pt-12 mt-12 border-t border-border/30">
-            <span className="text-sm text-muted-foreground">or say 👋 on</span>
+          <div className="flex flex-wrap justify-center items-center gap-6 pt-12 mt-12 border-t border-border/30">
+            <span className="text-sm text-muted-foreground">or say <span role="img" aria-label="waving hand">👋</span> on</span>
             <a 
               href="https://www.linkedin.com/in/samuel-arnborg-5a0145337/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-110"
-              aria-label="LinkedIn"
+              aria-label="Connect on LinkedIn (opens in new tab)"
             >
               LinkedIn
             </a>
@@ -216,7 +227,7 @@ const Index = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-all duration-300 font-medium hover:scale-110"
-              aria-label="GitHub"
+              aria-label="View projects on GitHub (opens in new tab)"
             >
               GitHub
             </a>
@@ -225,10 +236,14 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-border/30">
+      <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-border/30" role="contentinfo">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 Samuel Arnborg | Design & UX</p>
-          <p className="text-xs text-muted-foreground/60">Cooked with love in Karlstad 🇸🇪</p>
+          <p className="text-sm text-muted-foreground">
+            <span aria-label="Copyright">©</span> 2025 Samuel Arnborg | Design & UX
+          </p>
+          <p className="text-xs text-muted-foreground/60">
+            Cooked with love in Karlstad <span role="img" aria-label="Sweden flag">🇸🇪</span>
+          </p>
         </div>
       </footer>
     </div>
