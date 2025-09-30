@@ -162,8 +162,8 @@ const Index = () => {
             
             <div className="space-y-6" role="list">
               <div className="glass-card p-6 rounded-2xl border border-primary/20" role="listitem">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Design Process</h3>
-                <p className="text-foreground/80">Double Diamond framework for structured, iterative solutions</p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Design Philosophy</h3>
+                <p className="text-foreground/80">Form follows function, but beauty inspires connection and trust</p>
               </div>
               <div className="glass-card p-6 rounded-2xl border border-accent/20" role="listitem">
                 <h3 className="text-2xl font-bold text-foreground mb-2">Focus Areas</h3>
