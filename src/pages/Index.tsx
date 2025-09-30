@@ -103,11 +103,10 @@ const Index = () => {
             </div>
           </div>
 
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight">
-            <span className="block text-foreground/40 text-3xl md:text-4xl mb-4 font-normal">I'm Samuel</span>
-            <span className="gradient-text block">UX DESIGNER</span>
-            <span className="gradient-text block">&</span>
-            <span className="gradient-text block">GRAPHIC ARTIST</span>
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
+            <span className="block">UX DESIGNER</span>
+            <span className="block">&</span>
+            <span className="block">GRAPHIC ARTIST</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">
@@ -127,7 +126,7 @@ const Index = () => {
       {/* About Section - Redesigned */}
       <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="about-heading">
         <div className="glass-card rounded-3xl p-12 md:p-16">
-          <h2 id="about-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-12 text-center">About Me</h2>
+          <h2 id="about-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-12 text-center">About Me</h2>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
@@ -166,7 +165,7 @@ const Index = () => {
       {/* Projects Grid */}
       <main id="main-content" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32" role="main" aria-labelledby="projects-heading">
         <div className="text-center mb-20">
-          <h2 id="projects-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-6">Selected Works</h2>
+          <h2 id="projects-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-6">Selected Works</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             A curated collection of design projects showcasing UX research, visual design, and user-centered solutions
           </p>
@@ -188,7 +187,7 @@ const Index = () => {
       {/* Contact Section - Simplified */}
       <section id="contact" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="contact-heading">
         <div className="glass-card rounded-3xl p-12 md:p-20 text-center border border-primary/20">
-          <h2 id="contact-heading" className="text-5xl md:text-6xl font-bold gradient-text mb-8">Let's Talk</h2>
+          <h2 id="contact-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-8">Let's Talk</h2>
           <p className="text-xl text-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
             Whether you're a design team in need of support or an early-stage company looking to level up your design, 
             I'd love to talk about your project 💜
