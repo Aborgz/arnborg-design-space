@@ -66,12 +66,13 @@ const Index = () => {
           <div className="flex flex-col md:flex-row gap-10 items-start">
             {/* Profile Photo */}
             <div className="flex-shrink-0 relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-accent/40 to-primary/30 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
               <img 
                 src={profilePhoto} 
                 alt="Samuel Arnborg - UX Designer and Graphic Artist"
-                className="relative w-56 h-56 md:w-64 md:h-64 rounded-3xl object-cover border border-border/50 shadow-2xl transition-transform duration-500 group-hover:scale-105"
-                style={{ objectPosition: 'center 20%' }}
+                className="relative w-56 h-56 md:w-64 md:h-64 rounded-3xl object-cover border-2 border-primary/30 shadow-2xl transition-all duration-700 group-hover:scale-105 group-hover:border-primary/60"
+                style={{ objectPosition: 'center 20%', boxShadow: '0 20px 60px hsl(195 100% 50% / 0.3)' }}
               />
             </div>
             
@@ -129,11 +130,11 @@ const Index = () => {
           <div className="space-y-6">
             <a 
               href="mailto:arnborg.samuel@gmail.com" 
-              className="block text-center px-8 py-5 bg-gradient-to-r from-primary to-accent hover:shadow-glow text-primary-foreground font-bold rounded-xl transition-all duration-500 hover:scale-105 hover:-translate-y-1"
-              style={{ boxShadow: '0 10px 40px hsl(258 90% 66% / 0.3)' }}
+              className="block text-center px-8 py-5 bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground font-bold rounded-xl transition-all duration-500 hover:scale-105 hover:-translate-y-1 relative overflow-hidden group"
               aria-label="Send email to arnborg.samuel@gmail.com"
             >
-              Send Me an Email
+              <span className="relative z-10">Send Me an Email</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent via-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </a>
             
             <div className="flex justify-center items-center gap-8 pt-4">
