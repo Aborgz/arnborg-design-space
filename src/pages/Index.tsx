@@ -130,15 +130,7 @@ const Index = () => {
                 LinkedIn
               </a>
               <a 
-                href="https://dribbble.com/samuelarnborg" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition duration-200 code-text"
-              >
-                Dribbble
-              </a>
-              <a 
-                href="https://github.com/samuelarnborg" 
+                href="https://github.com/Aborgz" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition duration-200 code-text"
