@@ -110,6 +110,9 @@ const Index = () => {
           </div>
 
           <h1 id="hero-heading" className="text-7xl md:text-8xl lg:text-9xl font-bold leading-tight text-foreground">
+            <span className="block text-2xl md:text-3xl tracking-[0.3em] uppercase text-muted-foreground font-light mb-8 animate-fade-in">
+              Samuel Arnborg
+            </span>
             <span className="block">UX DESIGNER</span>
             <span className="block" aria-hidden="true">&</span>
             <span className="block">GRAPHIC ARTIST</span>
