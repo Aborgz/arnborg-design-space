@@ -266,7 +266,7 @@ const Index = () => {
           <h2 id="contact-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-8">Let's Talk</h2>
           <p className="text-xl text-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
             Whether you're a design team in need of support or an early-stage company looking to level up your design, 
-            I'd love to talk about your project <span role="img" aria-label="purple heart">💜</span>
+            I'd love to talk about your project
           </p>
           
           <a 
