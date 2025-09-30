@@ -1,0 +1,245 @@
+import { ArrowLeft, Sparkles, Video, Heart, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import christmasHero from "@/assets/christmas-hero.jpg";
+
+const ChristmasCard = () => {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <Link 
+            to="/" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-all duration-300"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span>Back to Portfolio</span>
+          </Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12">
+            <div className="inline-flex items-center gap-2 text-primary mb-4">
+              <Sparkles className="w-6 h-6" />
+              <span className="text-sm font-semibold uppercase tracking-wider">Educational Project</span>
+            </div>
+            <h1 className="text-6xl md:text-7xl font-bold text-foreground mb-6">
+              Merry Christmas Video Card
+            </h1>
+            <p className="text-2xl text-muted-foreground max-w-3xl">
+              Teaching digital storytelling and creative expression through holiday spirit
+            </p>
+          </div>
+
+          <div className="rounded-3xl overflow-hidden shadow-2xl mb-20">
+            <img 
+              src={christmasHero} 
+              alt="Children creating digital Christmas cards" 
+              className="w-full h-[600px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+        <div className="space-y-12">
+          {/* Overview */}
+          <div className="glass-card rounded-3xl p-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Project Overview</h2>
+            <div className="space-y-4 text-lg text-foreground/90 leading-relaxed">
+              <p>
+                The Merry Christmas Video Card project brought digital creativity to elementary school 
+                classrooms, empowering young students to create personalized animated holiday greetings 
+                for their families and friends. This initiative combined festive joy with fundamental 
+                digital literacy skills.
+              </p>
+              <p>
+                Over three weeks, students learned basic animation principles, digital storytelling techniques, 
+                and the power of visual communication—all while crafting heartfelt messages that celebrated 
+                the holiday season and strengthened family connections.
+              </p>
+            </div>
+          </div>
+
+          {/* Key Features */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="glass-card rounded-2xl p-8 border border-primary/20">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Video className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Animation Basics</h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Students learned frame-by-frame animation concepts, timing, and movement through 
+                user-friendly digital tools designed for young learners. Each child created their 
+                own animated characters and holiday scenes.
+              </p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8 border border-accent/20">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <Sparkles className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Creative Expression</h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Children designed custom backgrounds, chose music, added sound effects, and wrote 
+                personal messages. The project encouraged individuality while teaching technical skills.
+              </p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8 border border-primary/20">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Emotional Connection</h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Beyond technical skills, students explored themes of gratitude, family, and kindness. 
+                Many created deeply personal messages that brought parents to tears when received.
+              </p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8 border border-accent/20">
+              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">Collaboration Skills</h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Students worked in pairs and small groups, sharing ideas, providing feedback, and 
+                learning from each other. Teamwork became an integral part of the creative process.
+              </p>
+            </div>
+          </div>
+
+          {/* Learning Outcomes */}
+          <div className="glass-card rounded-3xl p-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Learning Outcomes</h2>
+            <div className="space-y-8">
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                  1
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-foreground mb-2">Digital Literacy</h4>
+                  <p className="text-foreground/80">
+                    Students gained confidence using digital tools, understanding file management, 
+                    and navigating creative software—foundational skills for the digital age.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                  2
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-foreground mb-2">Visual Storytelling</h4>
+                  <p className="text-foreground/80">
+                    Children learned how to convey emotions, messages, and narratives through images, 
+                    animation, and music—a crucial skill in modern communication.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                  3
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-foreground mb-2">Problem-Solving</h4>
+                  <p className="text-foreground/80">
+                    Technical challenges became opportunities to develop resilience, critical thinking, 
+                    and creative problem-solving abilities in a supportive environment.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">
+                  4
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-foreground mb-2">Emotional Intelligence</h4>
+                  <p className="text-foreground/80">
+                    Crafting heartfelt messages helped students articulate feelings, practice empathy, 
+                    and understand the impact of thoughtful communication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Video Section */}
+          <div className="glass-card rounded-3xl p-12 bg-gradient-to-br from-primary/5 to-accent/5">
+            <h2 className="text-4xl font-bold text-foreground mb-6 text-center">Project Showcase</h2>
+            <p className="text-center text-muted-foreground mb-8">
+              Watch one of the student-created Christmas video cards
+            </p>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <video 
+                controls 
+                className="w-full h-auto"
+                poster="/christmas-video-poster.jpg"
+              >
+                <source src="/christmas-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+          {/* Impact */}
+          <div className="glass-card rounded-3xl p-12">
+            <h2 className="text-4xl font-bold text-foreground mb-6">Project Impact</h2>
+            <div className="grid md:grid-cols-3 gap-8 mb-8">
+              <div className="text-center">
+                <div className="text-5xl font-bold text-primary mb-2">120+</div>
+                <p className="text-muted-foreground">Students Participated</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-primary mb-2">150+</div>
+                <p className="text-muted-foreground">Videos Created</p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl font-bold text-primary mb-2">95%</div>
+                <p className="text-muted-foreground">Parent Satisfaction</p>
+              </div>
+            </div>
+            <p className="text-lg text-foreground/90 leading-relaxed text-center">
+              Parents reported that receiving these personalized video cards was one of the most 
+              meaningful gifts they'd ever received, with many keeping them as cherished digital 
+              keepsakes. Teachers noted increased engagement in technology classes and a newfound 
+              enthusiasm for digital creativity among students.
+            </p>
+          </div>
+
+          {/* Testimonials */}
+          <div className="space-y-6">
+            <h2 className="text-4xl font-bold text-foreground mb-8 text-center">What Parents Said</h2>
+            
+            <div className="glass-card rounded-2xl p-8 border border-primary/20">
+              <p className="text-lg text-foreground/90 italic mb-4">
+                "I cried when I watched my daughter's video. She put so much thought and love 
+                into every detail. This project taught her skills she'll use forever, but more 
+                importantly, it helped her express her love in a new way."
+              </p>
+              <p className="text-sm text-muted-foreground">— Parent, Grade 3</p>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8 border border-accent/20">
+              <p className="text-lg text-foreground/90 italic mb-4">
+                "My son was so proud to show me what he created. He learned technical skills, 
+                sure, but he also learned patience, creativity, and the joy of making something 
+                meaningful for others. Best school project ever!"
+              </p>
+              <p className="text-sm text-muted-foreground">— Parent, Grade 4</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default ChristmasCard;
