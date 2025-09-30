@@ -61,6 +61,32 @@ const BullyingPsychology = () => {
             </div>
           </div>
 
+          {/* Problem & Solution */}
+          <div className="grid md:grid-cols-2 gap-8 mt-12 pt-12 border-t border-border/30">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="text-red-500">⚠️</span> The Problem
+              </h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Childhood bullying's psychological impact is often invisible and misunderstood. Society 
+                tends to dismiss it as "part of growing up," failing to recognize the profound, lasting 
+                neurological and emotional damage it causes. Victims grow into adults carrying unprocessed 
+                trauma that affects their relationships, careers, and sense of self-worth.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="text-green-500">✓</span> The Solution
+              </h3>
+              <p className="text-foreground/80 leading-relaxed">
+                This visual project raises awareness through evocative imagery and psychological research, 
+                helping viewers understand the gravity of childhood bullying. By making the invisible visible, 
+                it encourages empathy, validates survivors' experiences, and promotes conversations about 
+                prevention, intervention, and healing.
+              </p>
+            </div>
+          </div>
+
           {/* Research & Insights */}
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card rounded-2xl p-8 border border-primary/20">

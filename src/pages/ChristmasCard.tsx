@@ -65,6 +65,32 @@ const ChristmasCard = () => {
             </div>
           </div>
 
+          {/* Problem & Solution */}
+          <div className="grid md:grid-cols-2 gap-8 mt-12 pt-12 border-t border-border/30">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="text-red-500">⚠️</span> The Problem
+              </h3>
+              <p className="text-foreground/80 leading-relaxed">
+                Elementary school students often lack engaging opportunities to learn digital creativity 
+                and storytelling. Traditional holiday activities don't leverage modern technology, missing 
+                the chance to teach valuable digital literacy skills while creating meaningful, personal 
+                gifts for loved ones.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="text-green-500">✓</span> The Solution
+              </h3>
+              <p className="text-foreground/80 leading-relaxed">
+                I created an interactive project that combines holiday spirit with digital education. 
+                Students learned animation, video editing, and storytelling while creating personalized 
+                Christmas video cards for their families—blending technical skills with emotional expression 
+                and festive joy.
+              </p>
+            </div>
+          </div>
+
           {/* Key Features */}
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-card rounded-2xl p-8 border border-primary/20">
