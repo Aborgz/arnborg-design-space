@@ -237,12 +237,9 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-border/30" role="contentinfo">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex justify-center items-center">
           <p className="text-sm text-muted-foreground">
             <span aria-label="Copyright">©</span> 2025 Samuel Arnborg | Design & UX
-          </p>
-          <p className="text-xs text-muted-foreground/60">
-            Cooked with love in Karlstad <span role="img" aria-label="Sweden flag">🇸🇪</span>
           </p>
         </div>
       </footer>
