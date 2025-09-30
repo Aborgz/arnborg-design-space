@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/ProjectCard";
 import profilePhoto from "@/assets/samuel-profile.jpg";
 import lifeplannerImage from "@/assets/lifeplanner-preview.png";
-import { Mail, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Linkedin, Github, Briefcase, Users, Award, BookOpen } from "lucide-react";
 
 const Index = () => {
   const projects = [
@@ -133,12 +133,51 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="glass-card rounded-3xl p-8 md:p-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
+                <Briefcase className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="text-4xl md:text-5xl font-bold text-foreground">5+</div>
+              <p className="text-sm text-muted-foreground">Years Experience</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
+                <Users className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="text-4xl md:text-5xl font-bold text-foreground">50+</div>
+              <p className="text-sm text-muted-foreground">Projects Delivered</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
+                <Award className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="text-4xl md:text-5xl font-bold text-foreground">100%</div>
+              <p className="text-sm text-muted-foreground">Client Satisfaction</p>
+            </div>
+            
+            <div className="text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-2">
+                <BookOpen className="w-6 h-6" aria-hidden="true" />
+              </div>
+              <div className="text-4xl md:text-5xl font-bold text-foreground">10+</div>
+              <p className="text-sm text-muted-foreground">Frameworks Mastered</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section - Redesigned */}
       <section id="about" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32" aria-labelledby="about-heading">
         <div className="glass-card rounded-3xl p-12 md:p-16">
           <h2 id="about-heading" className="text-5xl md:text-6xl font-bold text-foreground mb-12 text-center">About Me</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-lg text-foreground/90 leading-relaxed">
               <p>
                 I am a passionate <strong className="text-foreground">UX Designer and Graphic Artist</strong> focused on creating intuitive, 
@@ -171,6 +210,64 @@ const Index = () => {
               </div>
             </div>
           </div>
+
+          {/* Frameworks & Methodologies */}
+          <div className="mt-16 pt-12 border-t border-border/30">
+            <h3 className="text-3xl font-bold text-foreground mb-8 text-center">Frameworks & Methodologies</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                'User-Centered Design (UCD)',
+                'Agile',
+                'Double Diamond',
+                'Design Thinking',
+                'Lean UX',
+                'Design Sprint',
+                'Jobs To Be Done (JTBD)',
+                'Atomic Design'
+              ].map((framework) => (
+                <span 
+                  key={framework}
+                  className="px-6 py-3 glass-card rounded-full border border-primary/20 text-foreground/90 font-medium hover:border-primary/40 hover:scale-105 transition-all duration-300"
+                >
+                  {framework}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools & Software Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6">Tools & Software</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Proficient in industry-standard design and collaboration tools
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {[
+            { name: 'Figma', color: 'from-purple-500/20 to-pink-500/20' },
+            { name: 'FigJam', color: 'from-green-500/20 to-teal-500/20' },
+            { name: 'Miro', color: 'from-yellow-500/20 to-orange-500/20' },
+            { name: 'Canva', color: 'from-blue-500/20 to-cyan-500/20' },
+            { name: 'Photoshop', color: 'from-blue-600/20 to-indigo-500/20' },
+            { name: 'Illustrator', color: 'from-orange-500/20 to-red-500/20' },
+            { name: 'InDesign', color: 'from-pink-500/20 to-rose-500/20' },
+            { name: 'After Effects', color: 'from-purple-600/20 to-violet-500/20' },
+            { name: 'XD', color: 'from-fuchsia-500/20 to-pink-500/20' },
+            { name: 'Premiere Pro', color: 'from-indigo-500/20 to-purple-500/20' },
+            { name: 'Sketch', color: 'from-amber-500/20 to-yellow-500/20' },
+            { name: 'Blender', color: 'from-orange-600/20 to-amber-500/20' }
+          ].map((tool) => (
+            <div 
+              key={tool.name}
+              className={`glass-card rounded-2xl p-6 text-center hover:scale-105 transition-all duration-300 border border-primary/20 hover:border-primary/40 bg-gradient-to-br ${tool.color}`}
+            >
+              <p className="text-lg font-bold text-foreground">{tool.name}</p>
+            </div>
+          ))}
         </div>
       </section>
 
