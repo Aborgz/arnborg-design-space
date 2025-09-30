@@ -1,11 +1,13 @@
 import ProjectCard from "@/components/ProjectCard";
 import profilePhoto from "@/assets/samuel-profile.jpg";
+import lifeplannerImage from "@/assets/lifeplanner-preview.png";
 
 const Index = () => {
   const projects = [
     {
-      title: "Coming soonn",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna."
+      title: "LifePlanner",
+      description: "Making it easier to plan so you can enjoy more in life. A comprehensive planning app with weekly, monthly, and custom list management.",
+      image: lifeplannerImage
     },
     {
       title: "Coming soonn",
@@ -98,6 +100,7 @@ const Index = () => {
               key={index}
               title={project.title}
               description={project.description}
+              image={project.image}
             />
           ))}
         </div>
